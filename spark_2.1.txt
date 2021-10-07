@@ -1,0 +1,45 @@
+Spark Setup
+
+1. Install Scala using below steps
+
+1. install git bash
+https://github.com/git-for-windows/git/releases/download/v2.33.0.windows.2/Git-2.33.0.2-64-bit.exe
+
+2. install sdk
+curl -s "https://get.sdkman.io" | bash
+
+source "$HOME/.sdkman/bin/sdkman-init.sh"
+
+
+3. verify
+sdk version
+
+4. From git bash install scala
+sdk install scala
+
+5. Set scala path and home variable(unzip scala and set below environment variable)
+path
+C:\Users\praveen\.sdkman\archives\scala3-3.0.2\bin
+SCALA_HOME
+C:\Users\praveen\.sdkman\archives\scala3-3.0.2
+
+5. Download spark
+https://www.apache.org/dyn/closer.lua/spark/spark-3.1.2/spark-3.1.2-bin-hadoop2.7.tgz
+
+6. Windows Utils
+https://github.com/steveloughran/winutils/archive/refs/heads/master.zip
+
+7. Unzip both, put into desired location
+
+8. copy hadoop-2.7.1 from winutil and paste into spark bin directory
+C:\Softwares\spark-3.1.2-bin-hadoop2.7\bin
+
+9. Setup spark path
+HADOOP_HOME = C:\Softwares\spark-3.1.2-bin-hadoop2.7
+path = C:\Softwares\spark-3.1.2-bin-hadoop2.7\bin
+
+SPARK_HOME = C:\Softwares\spark-3.1.2-bin-hadoop2.7
+path = C:\Softwares\spark-3.1.2-bin-hadoop2.7\bin
+
+10. open cmd anywhere and give below command
+spark-shell
